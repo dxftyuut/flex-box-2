@@ -10,6 +10,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     line-height: 1.5em;
+    width: 98.9vw;
+    height: 100vh;
+}
+
+p, h1, h2 {
+    margin-bottom: 10px;
 }
 
 header, section.normal {
@@ -17,5 +23,42 @@ header, section.normal {
 }
 
 section.flex-content {
+    padding: 20px;
     background-color:rgb(156, 156, 156);
+    display: flex;
+    flex-flow: column;
+}
+
+section > article {
+}
+
+article.text-media {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+article > div.text {
+    flex: 1 1 500px;
+}
+
+article > div.media {
+    flex: 1 0 500px;
+    
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
